@@ -1,9 +1,16 @@
 @CHARSET "UTF-8";
 #mybody{
-	background-image:  url('../Images/ju.jpg')
+	background-image:  url('../Images/login_bground.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 #mydiv{
-	background: rgba(163, 187, 212, 0.45);
+	position:absolute;
+	top:15%;
+	left:68%;
+/* 	margin:-100px 0 0 -100px; */
+	background: rgba(143, 173, 177, 0.2);
 	width: 300px;
 	height: 300px;
 	font-size: x-large;
@@ -15,4 +22,28 @@
 .myinput{
 	font-size: large;
 	font-family: 华文行楷;
+}
+#mybody2{
+	background-image: url('../Images/failed_bground.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#mybody3{
+	background-image: url('../Images/success.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+#myp{
+	color: red;
+	font-size: 40px;
+}
+.body{
+	background-image: url('../Images/index.jpg');
+	font-size: 40px;
+}
+#text-align{
+	color:#8000ff;
+	text-align: right;
 }
