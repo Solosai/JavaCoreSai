@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+		function show() {
+			var table = document.getElementById("my_table");
+			var arr = new Array();
+			for (var i = 1; i <= 10; i++) {
+				arr[i - 1] = 0;
+				if (i < 10) {
+					var sum = 0;
+					var trn = document.createElement("tr");
+					table.appendChild(trn);
+					for (var j = 1; j <= 10; j++) {
+
+						var tdn = document.createElement("td");
+						trn.appendChild(tdn);
+						if (j <= i) {
+							tdn.innerHTML = j + '*' + i + '=' + i * j;
+							sum += i * j;
+							arr[j - 1] += i * j;
+						} else if (j < 10) {
+							tdn.innerHTML = "";
+						} else {
+							tdn.innerHTML = sum;
+						}
+					}
+				} else if (i == 10) {
+					var trn = document.createElement("tr");
+					table.appendChild(trn);
+					for (var j = 0; j < 9; j++) {
+						var tdn = document.createElement("td");
+						trn.appendChild(tdn);
+						tdn.innerHTML = arr[j];
+					}
+				}
+			}
+		}
+		
+
+</body>
+</html>

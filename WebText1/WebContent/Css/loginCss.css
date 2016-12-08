@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#mybody{
+	background-image:  url('../Images/ju.jpg')
+}
+#mydiv{
+	background: rgba(163, 187, 212, 0.45);
+	width: 300px;
+	height: 300px;
+	font-size: x-large;
+}
+#myform{
+	font-family: 隶书;
+	font-weight:bold;
+}
+.myinput{
+	font-size: large;
+	font-family: 华文行楷;
+}

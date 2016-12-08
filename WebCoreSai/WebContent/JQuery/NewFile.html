@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+	<ul>
+		<li class="fruit">Apple</li>
+		<li>Tomato</li>
+		<li class="fruit">Banana</li>
+	</ul>
+	<ul>
+		<li>Potato</li>
+		<li class="fruit">Orange</li>
+		<li>Orange
+			<p>
+				<span>fruit</span>
+			</p>
+		</li>
+	</ul>
+
+<hr/>
+	<div>
+		祖先元素
+		<p>
+			<label>孙元素</label> <span><label>后代元素</label></span>
+		</p>
+	</div>
+<hr/>
+
+	<p style="display: none">你能看到我吗</p>
+	<p style="display: block;">你能看到我吗</p>
+<hr/>
+<form id="my_form" >
+<input type="text"/>
+<input type="radio"/>
+<input type="radio" checked="checked"/>
+<input type="checkbox"/>
+<input type="checkbox" checked="checked"/>
+</form>
+
+<select id="sel" multiple="multiple">
+<option value="0">苹果</option>
+<option value="1" selected="selected">桔子</option>
+<option value="2">荔枝</option>
+<option value="3" selected="selected">葡萄</option>
+<option value="4">香蕉</option>
+</select>
+	<script>
+		//$(".fruit").css("color","red");
+		$('div label').css('color', 'red');
+		/* $('li:first').css('color','red');
+		 $('li:last').css('color','blue'); */
+		$('li:first-child').css('color', 'red');
+		$('li:last-child').css('color', 'blue');
+		$('li:eq(1)').css('color', 'green');//指定下标过滤，可以该指定位置的颜色
+		$('li:eq(4)').css('color', 'yellow');
+		$('li:contains(an)').css('color', 'purple');//包含某些元素，就会被设置（包含an这个字母的都被该颜色了）
+		$('li:has(span)').css('color', 'yellow');//按包含过滤。过滤出来的是包含<span>的<li>
+		$('p:hidden').show();//查找p标签下的隐藏内容，并将他们显示出来
+		$('p:visible').hide();//查找p标签下的显示内容，并将他们隐藏起来
+		console.log($('#my_form:input:checked'));
+		console.log($('#sel:selected'));
+		
+		
+	</script>
+</body>
+</html>

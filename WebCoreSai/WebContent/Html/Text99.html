@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript"
+	src="../JQuery/jquery.min.js"></script>
+<title>Insert title here</title>
+<style type="text/css" id="style">
+#div{
+text-align: center;
+}
+.skt {
+    border:1px solid black;
+    border-collapse:collapse; 
+    background-color:lightblue;
+    margin:auto;
+	color: red;
+}
+.skt td{border: 1px solid black;
+}
+</style>
+</head>
+<body>
+	<div id="div">
+		<h1>九九乘法口诀表</h1>
+	
+	<hr />
+	
+		<input id="dy" type="button" value="打印" onclick="hideShow()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="tj" type="button" value="统计">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="ys" type="button" value="样式" onclick="table1.className='skt'">
+	</div>
+
+	<div id="div1" style="display: none" >
+		<script type="text/javascript">
+	
+			document.write("<table id='table1'>");
+
+			for (var x = 1; x <= 9; x++) {
+				document.write("<tr>");
+				for (var y = 1; y <= 9; y++) {
+					if (y <= x) {
+						document.write("<td>" + y + "*" + x + "=" + y * x
+								+ "</td>");
+					} else {
+						document.write("<td></td>");
+					}
+				}
+				document.write("<td>&nbsp;&nbsp;</td>");
+				document.write("</tr>");
+			}
+			document
+					.write("<tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>");
+			document.write("</table>");
+		</script>
+	</div>
+
+	<script type="text/javascript">
+		function hideShow() {
+			if ($('#dy').attr('value') == "打印") {
+				$('#div1').show();
+				$('#dy').attr('value', '收起');
+			} else {
+				$('#div1').hide();
+				$('#dy').attr('value', '打印');
+			}
+
+		}
+	</script>
+
+</body>
+</html>

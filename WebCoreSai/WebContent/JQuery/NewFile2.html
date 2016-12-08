@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+<input id="btn" type="text" value="点我" />
+
+
+  <script type="text/javascript">
+ 
+  
+  
+  
+  
+  $(function () {
+	$('#btn').bind('focus',function(){
+		$(this).css('background-color','blue');
+	})
+	$('#btn').bind('blur',function(){
+		$(this).css('background-color','red');
+	})
+})
+
+  
+  
+  
+  </script>
+  
+</body>
+</html>

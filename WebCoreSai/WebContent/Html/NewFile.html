@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  
+</head>
+<body>
+<script type="text/javascript">  
+  
+document.write("<table border='1'>");  
+  
+for (var x = 1; x <= 9; x++)  
+{  
+    document.write("<tr>");  
+    for (var y = 1; y <= 9; y++)   {  
+    	if (y<=x) {
+    		 document.write("<td>"+y+"*"+x+"="+y*x+"</td>"); 
+		} else {
+document.write("<td></td>");
+		}
+    }  
+    	document.write("<td>&nbsp;&nbsp;</td>");
+    document.write("</tr>");  
+}  
+document.write("<tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>");
+document.write("</table>");  
+  
+</script>  
+   </body> 
+</body>
+</html>

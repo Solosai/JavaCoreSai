@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+p{
+	margin: 0cm;
+}
+ol {
+	margin-left: 1cm;
+	color: blue;font-family: 隶书;text-decoration: underline;
+	font-size: 50px;
+}
+ul {
+	text-align:center;
+	color: #800080;font-size: 50px;
+}
+h1 {
+	color: #3c3c75;
+	font-family: 黑体;
+	font-style: italic;
+	font-weight: bolder;
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-align: center;
+}
+
+p.a{
+
+	background:red;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.b{
+
+	background:orange;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.c{
+
+	background:yellow;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.d{
+
+	background:green;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.e{
+
+	background:cyan;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.f{
+
+	background:blue;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}
+p.g{
+
+	background:purple;
+	color: blue;
+	font-size: 15pt;
+	text-indent: 10%
+}

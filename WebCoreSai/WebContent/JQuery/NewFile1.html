@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+  <form id="my_form" action="foo.php"></form>
+  <p id="world"><b>Hello</b></p>
+  <hr/>
+  
+   <h3>Hello</h3>
+  <hr/>
+   
+   <h4>Hello</h4>
+  <hr/>
+  <p id="love">loveyou</p>
+  
+  
+  <script type="text/javascript">
+  console.log($('#my_form').attr('action'));//控制台显示:原始属性--->foo.php
+  $('#my_form').attr('action','bar.php');//attr（有两个参数）表示设置属性，
+  console.log($('#my_form').attr('action'));//控制台显示:设置之后的属性--->bar.php
+  $('#my_form').removeAttr('action');//删除属性，方法只接收一个参数，就是属性名称
+  console.log($('#my_form').attr('action'));//undefined
+  
+  console.log($('#world').html());//没有参数时，表示获取元素中的文本
+  $('#world').html('<i>World</i>');//有参数时，表示设置p标签元素中的文本
+  console.log($('#world').html());
+  
+  $('h3').append('World');//尾部追加（不加空格 连一起的）
+  $('h4').prepend('World');//元素头部追加
+  
+  $('h3').after('<h2>LOVE</h2>');//元素平级标签尾部追加
+  $('h3').before('<h2>YOU</h2>');//元素平级标签头部追加
+  
+  $('h4').replaceWith('<b><i>health</i></b>');//整个替换
+  
+$('#love').wrap('<i></i>');
+ console.log($('#love').html());
+//$('#love').wraplnner('');
+
+
+  
+  
+  
+  </script>
+  
+</body>
+</html>
