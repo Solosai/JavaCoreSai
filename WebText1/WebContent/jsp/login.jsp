@@ -11,7 +11,7 @@
 <center>
 <div id="mydiv">
 <h1 >欢迎登录</h1>
-<form id="myform" action="loginReceive.jsp" name="mylogin" method="post">
+<form id="myform" action="<%=request.getContextPath() %>/servlet/MyLoginServlet" name="mylogin" method="post">
 姓名：<input type="text" name="username" title="请输入姓名"/><br/><br/>
 密码：<input type="password" name="userpassword" title="请输入密码" /><br/><br/>
 <input class="myinput" type="submit" name="submit" value="登录" title="点击登录"/>&nbsp;&nbsp;
